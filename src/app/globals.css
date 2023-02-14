@@ -129,3 +129,61 @@ a {
   -webkit-box-shadow: 7px 6px 10px -7px rgba(0,0,0,0.51);
   -moz-box-shadow: 7px 6px 10px -7px rgba(0,0,0,0.51);
 }
+.shadow-d {
+  box-shadow: 10px 5px 48px -29px rgba(87,87,87,0.3);
+  -webkit-box-shadow: 10px 5px 48px -29px rgba(87,87,87,0.3);
+  -moz-box-shadow: 10px 5px 48px -29px rgba(87,87,87,0.3);
+}
+
+.scrollbar {
+  @apply scrollbar-thin scrollbar-thumb-blue-700
+   scrollbar-track-blue-300 overflow-y-scroll 
+   scrollbar-thumb-rounded-full scrollbar-track-rounded-full;
+  animation: fadeOut .250s ease-in-out forwards;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 7px !important;
+}
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+.scrollbar:hover {
+  animation: fadeIn .250s ease-in-out forwards;
+}
+
+.scrollbar::-webkit-scrollbar {
+  background: white;
+  width: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: var(--var1) !important;
+}
+
+
+@property --var1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    --var1: white;
+  }
+
+  100% {
+    --var1: #1d4ed8;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    --var1: #1d4ed8;
+  }
+
+  100% {
+    --var1: white;
+  }
+}

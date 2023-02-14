@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from '@/styles/messagesnotifier.module.css'
 import MessageNotification from './MessageNotification'
-import MessageNotifierProps from '@/types/messageNotifier.type'
+import MessageNotifierProps from '@/types/messageNotifier'
 import Link from 'next/link'
 
 

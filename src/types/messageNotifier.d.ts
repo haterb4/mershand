@@ -1,4 +1,4 @@
-import MessageNotificationProps from "./messageNotification.type";
+import MessageNotificationProps from "./messageNotification";
 
 interface MessageNotifierProps {
     messagesNotifications: MessageNotificationProps[],

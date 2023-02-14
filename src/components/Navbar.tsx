@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client"
 import React, { useEffect, useState } from 'react'
 import styles from '@/styles/navbar.module.css'
@@ -6,7 +7,7 @@ import { Heart, MessageNotif, Notification1, Shop, ShoppingCart, User } from 'ic
 import Button from './Button'
 import NavbarSearch from './NavbarSearch'
 import MessagesNotifier from './messages/MessagesNotifier'
-import MessageNotificationProps from '@/types/messageNotification.type'
+import MessageNotificationProps from '@/types/messageNotification'
 import { useDetectClickOutside } from 'react-detect-click-outside'
 import AuthenticationLinks from './AuthenticationLinks'
 import ProfileCard from './ProfileCard'
@@ -51,7 +52,7 @@ const Navbar = () => {
     }, [position])
   return (
     navbarFidedAnimation &&(
-        <nav className={`${styles.navbar} ${navbarIsFixed && 'fixed top-0 left-0'} bg-violet w-full flex justify-between items-center px-4`}>
+        <nav className={`${styles.navbar} ${navbarIsFixed && 'fixed top-0 left-0'} z-50 bg-violet w-full flex justify-between items-center px-4`}>
             <div className={styles.brand+' flex justify-between items-center'}>
                 <Link href='/' className='poppins-extrabold uppercase text-2xl text-white'>Mershand</Link>
                 <div className='flex items-center'>

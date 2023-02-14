@@ -1,4 +1,4 @@
-import MessageNotificationProps from "@/types/messageNotification.type";
+import MessageNotificationProps from "@/types/messageNotification";
 
 const newMessagesList:MessageNotificationProps[] = [
     {

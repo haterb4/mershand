@@ -2,8 +2,9 @@
 
 import { useWindowPosition } from '@/hooks/useScrool'
 import React, { useEffect, useState } from 'react'
+import CircleDotLoader from '../loaders/CircleDotLoader'
 
-const PostCard = () => {
+const PostCard = ({spiner}: {spiner?:Boolean}) => {
   const [componentIsFixed, setComponentIsFixe] = useState(false)
   const position = useWindowPosition()
   useEffect(() => {
@@ -16,7 +17,7 @@ const PostCard = () => {
   }, [position])
   return (
     <div className='w-full h-[658px] bg-white radius my-8 flex justify-center items-center'>
-        <p>{position}</p>
+        {spiner? <CircleDotLoader/> :<p>{position}</p>}
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import ButtonProps from '@/types/button.type'
+import ButtonProps from '@/types/button'
 import React from 'react'
 import { useDetectClickOutside } from 'react-detect-click-outside'
 

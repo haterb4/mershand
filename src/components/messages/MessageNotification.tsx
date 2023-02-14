@@ -1,4 +1,4 @@
-import MessageProps from '@/types/Message.type'
+import MessageProps from '@/types/Message'
 import Link from 'next/link'
 import React from 'react'
 

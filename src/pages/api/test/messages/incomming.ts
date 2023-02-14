@@ -1,5 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import MessageNotificationProps from '@/types/messageNotification.type'
+import MessageNotificationProps from '@/types/messageNotification'
 import type { NextApiRequest, NextApiResponse } from 'next'
 import newMessagesList from '@/datas/newmessages'
 
