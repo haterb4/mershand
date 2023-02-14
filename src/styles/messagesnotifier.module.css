@@ -1,0 +1,5 @@
+.dropdown {
+    box-shadow: 7px 6px 10px -7px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 7px 6px 10px -7px rgba(0,0,0,0.51);
+    -moz-box-shadow: 7px 6px 10px -7px rgba(0,0,0,0.51);
+}

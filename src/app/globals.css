@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../../public/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsMedium;
+  src: url(../../public/fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../../public/fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: PoppinsExtrabold;
+  src: url(../../public/fonts/Poppins/Poppins-ExtraBold.ttf);
+}
+@font-face {
+  font-family: PoppinsLight;
+  src: url(../../public/fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: PoppinsExtralight;
+  src: url(../../public/fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+:root {
+  --border-radius: 11px;
+
+  --poppins-light: PoppinsLight;
+  --poppins-extralight: PoppinsExtralight;
+  --poppins-regular:  PoppinsRegular;
+  --poppins-medium: PoppinsMedium;
+  --poppins-bold: PoppinsBold;
+  --poppins-extrabold: PoppinsExtrabold;
+  
+  --dark: #081C4E;
+  --violet: #615DFA;
+  --deep-violet: #4E4AC8;
+  --green-blue: #23D2E2;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 250ms ease-in-out;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: #FAFAFA;
+  @apply poppins-regular;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.radius {
+  border-radius: var(--border-radius);
+}
+.radius-top {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+.radius-bottom {
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+.text-dark {
+  color: var(--dark);
+}
+
+.text-violet {
+  color: var(--violet);
+}
+
+.text-green-blue {
+  color: var(--green-blue);
+}
+
+.bg-violet {
+  background-color: var(--violet);
+}
+
+.bg-deep-violet {
+  background-color: var(--deep-violet);
+}
+
+.bg-green-blue {
+  background-color: var(--green-blue);
+}
+
+.hover-green-blue:hover {
+  background-color: var(--green-blue);
+}
+
+.poppins-light {
+  font-family: var(--poppins-light);
+}
+
+.poppins-extralight {
+  font-family: var(--poppins-extralight);
+}
+
+.poppins-regular {
+  font-family: var(--poppins-regular);
+}
+
+.poppins-medium {
+  font-family: var(--poppins-medium);
+}
+
+.poppins-bold {
+  font-family: var(--poppins-bold);
+}
+
+.poppins-extrabold {
+  font-family: var(--poppins-extrabold);
+}
+.dropdown {
+  box-shadow: 7px 6px 10px -7px rgba(0,0,0,0.51);
+  -webkit-box-shadow: 7px 6px 10px -7px rgba(0,0,0,0.51);
+  -moz-box-shadow: 7px 6px 10px -7px rgba(0,0,0,0.51);
+}
