@@ -51,7 +51,7 @@ const Navbar = () => {
         setNavbarPrevPosition(position)
     }, [position])
   return (
-    navbarFidedAnimation &&(
+    navbarFidedAnimation ?(
         <nav className={`${styles.navbar} ${navbarIsFixed && 'fixed top-0 left-0'} z-50 bg-violet w-full flex justify-between items-center px-4`}>
             <div className={styles.brand+' flex justify-between items-center'}>
                 <Link href='/' className='poppins-extrabold uppercase text-2xl text-white'>Mershand</Link>
@@ -94,7 +94,7 @@ const Navbar = () => {
                 </div>
             </div> 
         </nav>
-    )
+    ): <div></div>
   )
 }
 
