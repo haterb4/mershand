@@ -1,22 +1,22 @@
 const preferences:GroupLinkProps[] = [
     {
-        id: 'nfwoir5re92',
+        id: 'nfwoar5re92',
         name: 'montres'
     },
     {
-        id: 'nfwoir5re92',
-        name: 'montres'
+        id: 'nfwoiu5re92',
+        name: 'bracelets'
     },
     {
-        id: 'nfwoir5re92',
+        id: 'nfwofr5re92',
         name: 'telephones'
     },
     {
-        id: 'nfwoir5re92',
+        id: 'nfwosr5re92',
         name: 'pc'
     },
     {
-        id: 'nfwoir5re92',
+        id: 'nfwoqr5re92',
         name: 'accessoires'
     },
     {
@@ -24,19 +24,19 @@ const preferences:GroupLinkProps[] = [
         name: 'ustensiles'
     },
     {
-        id: 'nfwoir5re92',
+        id: 'nfwoia9re92',
         name: 'chambres'
     },
     {
-        id: 'nfwoir5re92',
+        id: 'nfwoip7re92',
         name: 'bages'
     },
     {
-        id: 'nfwoir5re92',
+        id: 'nfwofg5re92',
         name: 'rouge a levre'
     },
     {
-        id: 'nfwoir5re92',
+        id: 'nfwouv5re92',
         name: 'makeup'
     },
 ]

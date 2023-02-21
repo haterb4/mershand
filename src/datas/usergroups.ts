@@ -1,6 +1,6 @@
 const userGroups:GroupLinkProps[] = [
     {
-        id: 'csd7vswe8fe',
+        id: 'csd7vsxe8fe',
         name: 'Master Electronics'
     },
     {
